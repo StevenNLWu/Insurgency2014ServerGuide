@@ -28,7 +28,7 @@ apt-get install nano
 ```
 
 create a folder to install SteamCmd:
-(in here, using ~/SteamCmd)
+(in here, using `~/SteamCmd`)
 
 ``` shell
 cd ~/
