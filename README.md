@@ -1,4 +1,8 @@
 # Insurgency Server Setup Guide
+
+The following guide are based on Ubuntu 18.04 LTS. <br/>
+To run Insurgency server on a Linux machine, please do the following step by step:
+
 ## 1. Step up on Linux Environment
 ### 1.1 Software requirments
 run the following commend to keep the system up-to-date
