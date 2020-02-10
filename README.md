@@ -1,11 +1,11 @@
 # Insurgency Server Setup Guide
 
 The following guide are based on Ubuntu 18.04 LTS. <br/>
-To run Insurgency server on a Linux machine, please do the following step by step:
+To run Insurgency server on a Linux machine, please do the following step by step -
 
 ## 1. Step up on Linux Environment
 ### 1.1 Software requirments
-run the following commend to keep the system up-to-date
+run the following commend to keep the system up-to-date:
 
 ``` shell
 apt-get update
@@ -35,5 +35,31 @@ cd ~/
 mkdir SteamCmd
 cd SteamCmd
 ```
+
 ### 1.2 Insurgency Installation via SteamCmd
+download SteamCmd firstly:
+
+``` shell
+cd ~/SteamCMD
+wget http://media.steampowered.com/installer/steamcmd_linux.tar.gz 
+tar xvfz steamcmd_linux.tar.gz
+```
+
+run SteamCMD so as to download Insurgency Server file:
+
+``` shell
+./steamcmd.sh
+```
+``` shell
+login anonymous
+force_install_dir ./insurgency/ 
+app_update 237410 validate
+......(downloading ~10GB file; better to taste a coffee)
+exit
+```
+
+### 1.3. Config Setting
+
+
+
 
