@@ -52,14 +52,18 @@ run SteamCMD so as to download Insurgency Server file:
 ```
 ``` shell
 login anonymous
-force_install_dir ./insurgency/ 
+force_install_dir ./insServer/ 
 app_update 237410 validate
 ......(downloading ~10GB file; better to taste a coffee)
 exit
 ```
 
 ### 1.3. Config Setting
-
+You, at least, need to config the server setting before we go:
+``` shell
+cd /SteamCmd/insServer/insurgency/cfg
+vi server.cfg
+```
 
 
 
