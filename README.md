@@ -1,5 +1,5 @@
 # Insurgency Server Setup Guide
-This guild is trying to show how to setup up a Insurgency dedicated server.
+This guild is trying to show how to setup up an Insurgency dedicated server.
 
 ## 1. Step up on Linux Environment
 The following steps are based on Ubuntu 18.04 LTS. <br/>
