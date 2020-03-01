@@ -62,9 +62,43 @@ exit
 ### 1.3. Config Setting
 You, at least, need to config the server setting before we go:
 ``` shell
-cd /SteamCmd/insServer/insurgency/cfg
+cd ~/SteamCmd/insServer/insurgency/cfg
 vi server.cfg
 ```
 
+Optionally, if you are going to play checkpoint, you can edit:
+``` shell
+(optional)
+vi ~/SteamCmd/insServer/insurgency/cfg/server_checkpoint.cfg
+vi ~/SteamCmd/insServer/insurgency/mapcycle_cooperative.txt
+```
+Optionally, the following file is the server message:
+``` shell
+(optional)
+cd ~/SteamCmd/insServer/insurgency/
+vi motd.txt
+```
 
+### 1.4. Starting Script Creation
+To be convenient, we create a script before kicking the server:
+``` shell
+cd ~/SteamCmd/insServer/ 
+touch start.sh
+chmod 744 start.sh
+vi start.sh
+```
+(please change the path, ip, port, player no. and startig map,  according to your environment)
+```xml
+export LD_LIBRARY_PATH=~/SteamCmd/insServer:~/SteamCmd/insServer/bin:{$LD_LIBRARY_PATH}
+./srcds_linux -console +map ministry_coop +maxplayers 32 -ip <your ip> -port <your port, for example 27015>
+```
+### 1.5. Kick Server
+To kick the server., run the following cmd:
+``` shell
+cd ~/SteamCmd/insServer/ 
+./start.sh
+```
+then make sure the server is running and no error occurred.
+
+ENJOY!
 
