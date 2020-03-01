@@ -1,11 +1,23 @@
 # Insurgency Server Setup Guide
 This guild is trying to show how to setup up an Insurgency dedicated server.
 
-## 1. Step up on Linux Environment
+## 1. hardware requirement
+To run a private dedicated server for cooperation game with your friends (3-6), <br>
+believe it or not, the following machine (Linux exclusive) is good enought:
+* 1 CPU core
+* 2 GB Ram
+* ~10 GB hard disk
+
+Remember in your firewall and router setting:
+* open 27015 UDP/TCP
+* port forward for 27015 UDP/TCP, in the router, if any
+
+
+## 2. Step up on Linux Environment
 The following steps are based on Ubuntu 18.04 LTS. <br/>
 To host Insurgency server on a Linux machine, please do the following step by step -
 
-### 1.1 Software requirments
+### 2.1 Software requirments
 run the following commend to keep the system up-to-date:
 
 ``` shell
@@ -37,7 +49,7 @@ mkdir SteamCmd
 cd SteamCmd
 ```
 
-### 1.2 Insurgency Installation via SteamCmd
+### 2.2 Insurgency Installation via SteamCmd
 download SteamCmd firstly:
 
 ``` shell
@@ -59,7 +71,7 @@ app_update 237410 validate
 exit
 ```
 
-### 1.3. Config Setting
+### 2.3. Config Setting
 You, at least, need to config the server setting before we go:
 ``` shell
 cd ~/SteamCmd/insServer/insurgency/cfg
@@ -79,7 +91,7 @@ cd ~/SteamCmd/insServer/insurgency/
 vi motd.txt
 ```
 
-### 1.4. Starting Script Creation
+### 2.4. Starting Script Creation
 To be convenient, we create a script before kicking the server:
 ``` shell
 cd ~/SteamCmd/insServer/ 
@@ -92,7 +104,7 @@ vi start.sh
 export LD_LIBRARY_PATH=~/SteamCmd/insServer:~/SteamCmd/insServer/bin:{$LD_LIBRARY_PATH}
 ./srcds_linux -console +map ministry_coop +maxplayers 32 -ip <your ip> -port <your port, for example 27015>
 ```
-### 1.5. Kick Server
+### 2.5. Kick Server
 To kick the server., run the following cmd:
 ``` shell
 cd ~/SteamCmd/insServer/ 
@@ -100,5 +112,5 @@ cd ~/SteamCmd/insServer/
 ```
 then make sure the server is running and no error occurred.
 
-ENJOY!
+ENJOY!:100:
 
