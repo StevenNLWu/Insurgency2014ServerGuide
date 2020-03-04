@@ -166,5 +166,7 @@ cd ~/SteamCmd/insServer/
 ```
 then make sure the server is running and no error occurred.
 
-ENJOY!:100:
+ENJOY!
+
+:100:
 
