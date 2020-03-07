@@ -5,7 +5,7 @@ This guild is trying to show how to setup up an Insurgency dedicated server.
 To run a private dedicated server for cooperation game with your friends (3-6), <br>
 believe it or not, the following machine (Linux exclusive) is good enought:
 * 1 CPU core
-* 2 GB Ram
+* 1 GB Ram
 * ~10 GB hard disk
 
 Remember in your firewall and router setting:
