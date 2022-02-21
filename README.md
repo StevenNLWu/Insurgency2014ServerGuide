@@ -118,8 +118,8 @@ run SteamCMD so as to download Insurgency Server file:
 ./steamcmd.sh
 ```
 ``` shell
+force_install_dir ./ins2014Server/ 
 login anonymous
-force_install_dir ./insServer/ 
 app_update 237410 validate
 ......(downloading ~10GB file; better to taste a coffee)
 exit
