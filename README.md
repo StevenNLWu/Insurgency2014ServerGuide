@@ -34,8 +34,8 @@ C:/SteamCMD/steamcmd.exe
 After that, entering the following cmd to download Insurgency:
 
 ``` shell
+force_install_dir ./ins2014Server/ 
 login anonymous
-force_install_dir ./insServer/ 
 app_update 237410 validate
 ......(downloading ~10GB file; better to taste a coffee)
 exit
@@ -128,40 +128,40 @@ exit
 ### 3.3. Config Setting
 You, at least, need to config the server setting before we go:
 ``` shell
-cd ~/SteamCmd/insServer/insurgency/cfg
+cd ~/SteamCmd/ins2014Server/insurgency/cfg
 vi server.cfg
 ```
 
 Optionally, if you are going to play checkpoint, you can edit:
 ``` shell
 (optional)
-vi ~/SteamCmd/insServer/insurgency/cfg/server_checkpoint.cfg
-vi ~/SteamCmd/insServer/insurgency/mapcycle_cooperative.txt
+vi ~/SteamCmd/ins2014Server/insurgency/cfg/server_checkpoint.cfg
+vi ~/SteamCmd/ins2014Server/insurgency/mapcycle_cooperative.txt
 ```
 Optionally, the following file is the server message:
 ``` shell
 (optional)
-cd ~/SteamCmd/insServer/insurgency/
+cd ~/SteamCmd/ins2014Server/insurgency/
 vi motd.txt
 ```
 
 ### 3.4. Starting Script Creation
 To be convenient, we create a script before kicking the server:
 ``` shell
-cd ~/SteamCmd/insServer/ 
+cd ~/SteamCmd/ins2014Server/ 
 touch start.sh
 chmod 744 start.sh
 vi start.sh
 ```
 (please change the path, ip, port, player no. and startig map, according to your environment)
 ```xml
-export LD_LIBRARY_PATH=~/SteamCmd/insServer:~/SteamCmd/insServer/bin:{$LD_LIBRARY_PATH}
+export LD_LIBRARY_PATH=~/SteamCmd/ins2014Server:~/SteamCmd/ins2014Server/bin:{$LD_LIBRARY_PATH}
 ./srcds_linux -console +map ministry_coop +maxplayers 32 -ip xxx.xxx.xxx -port yyyyy(e.g. 27015)
 ```
 ### 3.5. Kick Server
 To kick the server., run the following cmd:
 ``` shell
-cd ~/SteamCmd/insServer/ 
+cd ~/SteamCmd/ins2014Server/ 
 ./start.sh
 ```
 then make sure the server is running and no error occurred.
