@@ -1,4 +1,4 @@
-# Insurgency2014 Server Setup Guide
+# Insurgency 2014 Server Setup Guide
 This guild is trying to show how to setup up an Insurgency dedicated server.
 
 ## 1. Hardware Requirement
